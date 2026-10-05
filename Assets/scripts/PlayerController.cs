@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float speed = 10f; 
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
           //moves the car
-           transform.Translate(Vector3.forward * Time.deltaTime * 100);
+           transform.Translate(Vector3.forward * Time.deltaTime * 10);
 
     }
 }
